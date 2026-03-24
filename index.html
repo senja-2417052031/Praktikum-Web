@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Form Kehadiran Praktikan</title>
     <link rel="stylesheet" href="style.css">
-
-    <title>Pertemuan 1</title>
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
-    <h2>selamat datang di mata kuliah pemrograman web</h2>
+
+<div class="container">
+    <form action="submit.php" method="post" class="card">
+        <h2>Form Kehadiran Praktikan</h2>
+
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama">
+
+        <label for="npm">NPM</label>
+        <input type="text" id="npm" name="npm" placeholder="Masukkan NPM">
+
+        <label>Kelas</label>
+        <input type="text" list="kelas" name="kelas" placeholder="Pilih kelas">
+
+        <datalist id="kelas">
+            <option value="A">
+            <option value="B">
+            <option value="SI">
+            <option value="MI">
+        </datalist>
+
+        <label for="date">Tanggal</label>
+        <input type="date" name="tanggal">
+
+        <label for="time">Waktu</label>
+        <input type="time" name="waktu">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
 </body>
 </html>
